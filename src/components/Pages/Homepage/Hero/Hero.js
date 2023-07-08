@@ -11,7 +11,7 @@ import img7 from "../../../../assets/images/hero/7.png";
 const Hero = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-10 border-solid border-black border rounded-md p-5">
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
         <div className="">
           <Typography className="text-4xl ">Members</Typography>
           <Typography className="my-5">
@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <img className="rounded-md" src={img7} alt="" />
+          <img className="rounded-md mx-auto lg:mx-0" src={img7} alt="" />
         </div>
       </div>
     </div>

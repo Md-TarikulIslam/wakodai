@@ -14,7 +14,7 @@ export default function Slider() {
         {allData.map((data) => {
           return (
             <div className="">
-              <div className="relative h-full w-full flex flex-row-reverse justify-between max-w-screen-xl mx-auto items-center gap-16">
+              <div className="relative h-full w-full flex flex-col lg:flex-row-reverse justify-between max-w-screen-xl mx-auto items-center gap-16">
                 <div>
                   <img
                     src={data.img}
