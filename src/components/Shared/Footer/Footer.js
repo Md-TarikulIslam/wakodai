@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="relative w-full bg-black text-white">
-      <div className="flex flex-col ml-1 lg:ml-0 md:flex-row max-w-screen-xl mx-auto py-10 justify-between gap-5 lg:gap-0">
+      <div className="flex flex-col  ml-1 lg:ml-auto md:flex-row max-w-screen-xl mx-auto py-10 justify-between gap-5 lg:gap-0">
         <div className="w-96">
           <Typography className="text-xl font-semibold">
             Newsletter Subscription

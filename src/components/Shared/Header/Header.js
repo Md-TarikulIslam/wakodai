@@ -12,7 +12,7 @@ import Clock from "react-live-clock";
 const Header = () => {
   return (
     <div>
-      <div className="bg-blue-600 py-2">
+      <div className="bg-blue-900 py-2">
         <div className="max-w-screen-xl mx-auto justify-between flex flex-col-reverse lg:flex-row items-center lg:items-end">
           <img className="w-32" src={logo} alt="" />
           <div className="flex flex-col-reverse lg:flex-col main-flex">
