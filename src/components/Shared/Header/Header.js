@@ -7,19 +7,24 @@ import "./Header.css";
 import { Button, IconButton, Input } from "@material-tailwind/react";
 import Modal from "./Modal";
 import { FaSearch } from "react-icons/fa";
+import Clock from "react-live-clock";
 
 const Header = () => {
-  const date = new Date();
-  const showTime =
-    date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
   return (
     <div>
       <div className="bg-blue-600 py-2">
-        <div className="max-w-screen-xl mx-auto justify-between flex flex-col lg:flex-row items-center lg:items-end">
+        <div className="max-w-screen-xl mx-auto justify-between flex flex-col-reverse lg:flex-row items-center lg:items-end">
           <img className="w-32" src={logo} alt="" />
-          <div className="flex flex-col main-flex">
+          <div className="flex flex-col-reverse lg:flex-col main-flex">
             <div className="flex justify-evenly lg:justify-between space">
-              <p className="text-white">{showTime}</p>
+              <p className="text-white">
+                {" "}
+                <Clock
+                  format={"HH:mm:ss"}
+                  ticking={true}
+                  timezone={"Africa/Blantyre"}
+                />
+              </p>
               <Modal />
               <div className="flex gap-2">
                 <div className="w-32 lg:w-72">
