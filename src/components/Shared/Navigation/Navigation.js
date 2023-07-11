@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   const [openNav, setOpenNav] = useState(false);
@@ -25,9 +26,9 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           HOME
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -35,9 +36,9 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/about" className="flex items-center">
           ABOUT FWE
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -75,9 +76,9 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/shop" className="flex items-center">
           SHOP
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
