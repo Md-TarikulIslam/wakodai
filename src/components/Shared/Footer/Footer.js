@@ -1,5 +1,6 @@
 import { IconButton, Input, Typography } from "@material-tailwind/react";
 import { FaCheck } from "react-icons/fa";
+import img from '../../../assets/images/footer/1.png'
 export default function Footer() {
   return (
     <footer className="relative w-full bg-black text-white">
@@ -50,6 +51,10 @@ export default function Footer() {
             Sign up to receive news and information about European Wado Karate
             and upcomming FWE events.
           </Typography>
+          <Typography className="text-xl font-semibold mt-5">
+            Payments
+          </Typography>
+          <img src={img} />
         </div>
       </div>
     </footer>

@@ -7,10 +7,12 @@ import Navigation from "../Shared/Navigation/Navigation";
 const Main = () => {
   return (
     <div>
-      <Header></Header>
-      <Navigation></Navigation>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <Header />
+      <div className="w-full">
+        <Navigation />
+      </div>
+      <Outlet />
+      <Footer />
     </div>
   );
 };

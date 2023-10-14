@@ -19,16 +19,14 @@ export default function Navigation() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-16 ">
+    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center  lg:justify-between w-full">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <Link to="/" className="flex items-center">
-          HOME
-        </Link>
+        <Link to="/">HOME</Link>
       </Typography>
       <Typography
         as="li"
@@ -36,9 +34,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <Link to="/about" className="flex items-center">
-          ABOUT FWE
-        </Link>
+        <Link to="/about">ABOUT FWE</Link>
       </Typography>
       <Typography
         as="li"
@@ -46,9 +42,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
-          MEMBERS
-        </a>
+        <Link to="*">MEMBERS</Link>
       </Typography>
       <Typography
         as="li"
@@ -56,9 +50,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
-          NEWS & EVENTS
-        </a>
+        <Link to="*">NEWS & EVENTS</Link>
       </Typography>
       <Typography
         as="li"
@@ -66,9 +58,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
-          RESULTS & PHOTOS
-        </a>
+        <Link to="*">RESULTS & PHOTOS</Link>
       </Typography>
       <Typography
         as="li"
@@ -76,9 +66,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <Link to="/shop" className="flex items-center">
-          SHOP
-        </Link>
+        <Link to="/shop">SHOP</Link>
       </Typography>
       <Typography
         as="li"
@@ -86,9 +74,7 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
-          MEDIA
-        </a>
+        <Link to="*">BLOGS</Link>
       </Typography>
       <Typography
         as="li"
@@ -96,17 +82,23 @@ export default function Navigation() {
         color="blue-gray"
         className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
-          DOWNLOADS
-        </a>
+        <Link to="/media">MEDIA</Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-bold"
+      >
+        <Link to="*">DOWNLOADS</Link>
       </Typography>
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-3xl py-2 px-4 lg:px-8 lg:py-4 rounded-none">
-      <div className="container mx-auto flex items-center justify-center text-blue-gray-900">
-        <div className="hidden max-w-screen-2xl lg:block">{navList}</div>
+    <div className="mx-auto max-w-screen-xl py-2 px-4 lg:px-0 lg:py-2 rounded-none ">
+      <div className="container w-full text-blue-gray-900 ">
+        <div className="hidden max-w-screen-xl lg:block ">{navList}</div>
 
         <IconButton
           variant="text"
@@ -147,6 +139,6 @@ export default function Navigation() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>{navList}</MobileNav>
-    </Navbar>
+    </div>
   );
 }
